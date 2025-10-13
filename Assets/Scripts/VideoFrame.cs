@@ -38,4 +38,17 @@ public class VideoFrame : MonoBehaviour
 
 
     }
+
+    public void CheckVideoFrame(bool Checker){
+        if(Checker){
+            if(!vp.isPlaying){
+                vp.Play();
+            }
+
+        }
+
+        else{
+        vp.Stop();
+    }
+    }
 }

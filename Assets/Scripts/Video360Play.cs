@@ -10,6 +10,15 @@ public class Video360Play : MonoBehaviour
     public VideoClip[] vcList;
     int curVCidx;
 
+
+    public void SetVideoPlay(int num){
+        if(curVCidx != num){
+            vp.Stop();
+            vp.clip = vcList[num];
+            curVCidx = num;
+            vp.Play();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
