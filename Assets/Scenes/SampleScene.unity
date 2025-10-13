@@ -425,6 +425,7 @@ MonoBehaviour:
   uiCanvas: {fileID: 18554828}
   gazeImg: {fileID: 703959232}
   uiScaleVal: 1
+  vp360: {fileID: 1901496885}
   gazeChargeTime: 3
 --- !u!1 &1026793285 stripped
 GameObject:
