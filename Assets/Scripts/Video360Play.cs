@@ -12,6 +12,7 @@ public class Video360Play : MonoBehaviour
 
 
     public void SetVideoPlay(int num){
+        num = num % vcList.Length;
         if(curVCidx != num){
             vp.Stop();
             vp.clip = vcList[num];
@@ -27,7 +28,7 @@ public class Video360Play : MonoBehaviour
         curVCidx = 0;
 
         //영상 자동재생 끄기
-        // vp.Stop();
+        vp.Stop();
 
     }
 
@@ -37,6 +38,7 @@ public class Video360Play : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftBracket)){
             curVCidx = (curVCidx -1 + vcList.Length)%vcList.Length;
             vp.clip = vcList[curVCidx];
+            
         }
         if(Input.GetKeyDown(KeyCode.RightBracket)){
             curVCidx = (curVCidx + 1)%vcList.Length;

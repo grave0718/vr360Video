@@ -20,7 +20,7 @@ public class GazePointerCtrl : MonoBehaviour
     GameObject prevHitObj;
     GameObject curHitObj;
     float curGazeTime = 0;
-    public float gazeChargeTime = 3f;
+    public float gazeChargeTime = 2f;
 
     // Start is called before the first frame update
     void Start()

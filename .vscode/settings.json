@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "VR360Player.sln"
+    "dotnet.defaultSolution": "vr360Video.sln"
 }
